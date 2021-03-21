@@ -9,9 +9,9 @@ _Addition / Subtraction / Multiplication / Division_
 
 Has to be done:
 
-    -Addition
+    ✔ Addition
 
-    -Subtraction
+    ✔ Subtraction
 
     -Multipication
 
