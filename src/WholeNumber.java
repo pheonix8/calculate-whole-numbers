@@ -7,7 +7,7 @@ import java.io.IOException;
  * @version 0.1
  * @since 21.03.2021
  */
-public class WholeNumber {
+public class    WholeNumber {
 
     private Node head;
     private Node tail;
@@ -162,6 +162,7 @@ public class WholeNumber {
         number2.addLast((byte) 0);
         number2.iterateForward();
     */
+        number1.setPositive(false);
         WholeNumber number3;
 
 

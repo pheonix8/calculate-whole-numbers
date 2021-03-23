@@ -30,16 +30,6 @@ public class Subtraction {
 
     private static WholeNumber subtract(WholeNumber number1, WholeNumber number2) {
         WholeNumber difference = new WholeNumber();
-
-        System.out.println("***********************");
-        System.out.println("*     Subtract    *");
-        System.out.println("***********************");
-        System.out.print("Number 1: ");
-        number1.iterateForward();
-        System.out.print("Number 2: ");
-        number2.iterateForward();
-
-
         WholeNumber biggerNumber = Operations.compareNumberSize(number1, number2);
 
 

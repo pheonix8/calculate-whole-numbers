@@ -13,8 +13,10 @@ public class Addition {
             return Addition.add(number1, number2);
         } else if (number1.isPositive() || number2.isPositive()) {
             if (number1.isPositive()) {
+                number2.setPositive(true);
                 return Subtraction.subtractionHandler(number1, number2);
             } else {
+                number1.setPositive(true);
                 return Subtraction.subtractionHandler(number2, number1);
             }
         } else {
@@ -26,16 +28,6 @@ public class Addition {
 
     private static WholeNumber add(WholeNumber number1, WholeNumber number2) {
         WholeNumber sum = new WholeNumber();
-
-        System.out.println("***********************");
-        System.out.println("*       Add           *");
-        System.out.println("***********************");
-        System.out.print("Number 1: ");
-        number1.iterateForward();
-        System.out.print("Number 2: ");
-        number2.iterateForward();
-
-
         Node tmpNum1 = number1.getTail();
         Node tmpNum2 = number2.getTail();
         byte tmpSum;
