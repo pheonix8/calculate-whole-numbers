@@ -22,12 +22,10 @@ public class TestingMULT {
         number1.addLast((byte) 5);
         number1.addLast((byte) 8);
         number1.addLast((byte) 3);
-        number1.iterateForward();
 
         number2 = new WholeNumber();
         number2.addLast((byte) 7);
         number2.addLast((byte) 6);
-        number2.iterateForward();
 
         number1.setPositive(true);
         number2.setPositive(true);
@@ -42,9 +40,11 @@ public class TestingMULT {
         WholeNumber result = Multiplication.multiplicationHandler(number1, number2);
 
         WholeNumber expect = new WholeNumber();
-        expect.addLast((byte) 1);
-        expect.addLast((byte) 2);
-        expect.addLast((byte) 5);
+        expect.addLast((byte) 4);
+        expect.addLast((byte) 4);
+        expect.addLast((byte) 3);
+        expect.addLast((byte) 0);
+        expect.addLast((byte) 8);
 
         Assert.assertNull(Operations.compareNumberSize(expect, result));
     }
@@ -57,10 +57,15 @@ public class TestingMULT {
     public void multiplicationPN() {
         number2.setPositive(false);
         WholeNumber result = Multiplication.multiplicationHandler(number1, number2);
+        result.iterateForward();
 
         WholeNumber expect = new WholeNumber();
-        expect.addLast((byte) 7);
-        expect.addLast((byte) 5);
+        expect.addLast((byte) 4);
+        expect.addLast((byte) 4);
+        expect.addLast((byte) 3);
+        expect.addLast((byte) 0);
+        expect.addLast((byte) 8);
+        expect.setPositive(false);
 
         Assert.assertNull(Operations.compareNumberSize(expect, result));
 
@@ -76,9 +81,11 @@ public class TestingMULT {
         WholeNumber result = Multiplication.multiplicationHandler(number1, number2);
 
         WholeNumber expect = new WholeNumber();
-        expect.addLast((byte) 7);
-        expect.addLast((byte) 5);
-
+        expect.addLast((byte) 4);
+        expect.addLast((byte) 4);
+        expect.addLast((byte) 3);
+        expect.addLast((byte) 0);
+        expect.addLast((byte) 8);
         expect.setPositive(false);
 
         Assert.assertNull(Operations.compareNumberSize(expect, result));
@@ -96,12 +103,11 @@ public class TestingMULT {
         WholeNumber result = Multiplication.multiplicationHandler(number1, number2);
 
         WholeNumber expect = new WholeNumber();
-        expect.addLast((byte) 1);
-        expect.addLast((byte) 2);
-        expect.addLast((byte) 5);
-
-        expect.setPositive(false);
-
+        expect.addLast((byte) 4);
+        expect.addLast((byte) 4);
+        expect.addLast((byte) 3);
+        expect.addLast((byte) 0);
+        expect.addLast((byte) 8);
 
         Assert.assertNull(Operations.compareNumberSize(expect, result));
 

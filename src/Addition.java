@@ -44,8 +44,8 @@ public class Addition {
             tmpSum = (byte) (tmpSum + keep);
 
             if (tmpSum > 9) {
-                keep = 1;
-                tmpSum = (byte) (tmpSum - 10);
+                keep = (byte) (tmpSum / 10);
+                tmpSum = (byte) (tmpSum % 10);
             } else {
                 keep = 0;
             }

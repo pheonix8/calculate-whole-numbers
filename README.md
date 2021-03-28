@@ -13,6 +13,6 @@ Has to be done:
 
     ✔ Subtraction
 
-    -Multipication
+    ✔ Multipication
 
     -Division
